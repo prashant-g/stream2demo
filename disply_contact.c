@@ -18,6 +18,7 @@ void displayContacts( contact *start)
 		printf("Email = %s\n",(start+i)->email);
 		printf("Alternate Phone = %d\n",(start+i)->alternate_phone_num);
 		printf("*****************************************\n");
+		printf("*****************************************\n");
 		}
 
 	}
