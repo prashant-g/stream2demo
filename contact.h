@@ -13,4 +13,5 @@ typedef struct contact
 int addContact(contact *start);
 void displayContacts(contact *start);
 int searchContact(contact *start,const char *name);
+int deleteContact(contact *start,const char *name);
 #endif

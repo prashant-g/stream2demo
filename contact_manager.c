@@ -10,7 +10,7 @@ int main()
 	contact mycontacts[20];
 	while(1)
 	{
-		printf("1 :Add Contact\n2 :Display Contact\n3 :Search contact\n0 :Exit\n");
+		printf("1 :Add Contact\n2 :Display Contact\n3 :Search contact\n4: delete contact\n0 :Exit\n");
 		scanf("%d",&choice);
 		switch(choice)
 		{
@@ -30,6 +30,14 @@ int main()
 			scanf("%s",sname);
 			if(searchContact(mycontacts,sname))
 				printf("Contact found in phonebook\n");
+			else
+				printf("Contact not found in phonebook\n");
+			break;
+		case 4:
+			printf("Enter name of the contact to delete :: ");
+			scanf("%s",sname);
+			if(deleteContact(mycontacts,sname))
+				printf("Contact found  and deleted in phonebook\n");
 			else
 				printf("Contact not found in phonebook\n");
 			break;
